@@ -1,0 +1,215 @@
+body, html{
+   height: 100%;
+    width: 100%; 
+}
+
+*{
+    box-sizing: border-box;
+}
+body{
+    background-image: linear-gradient(45deg, #f66a66 4%, #f879a1 97%);
+    padding: 0;
+    margin: 0;
+}
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 97px 0 117px;
+}
+.redes__sociales{
+    display: flex;
+}
+.redes__item img{
+    width: 40px;
+    transform: rotate(-90deg);
+}
+.title h2{
+    color: #ffffff;
+    font-size: 72px;
+    margin: 0px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.container{
+    width: 89.5%;
+    max-width: 1272px;
+    margin: auto;
+}
+.marcas{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 27px 40px 20px;
+    margin-bottom: 6px;
+}
+.informe{
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 72px 40px 42px;
+    margin: 6px 0 14px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.marcas td img{
+    width: 150px;
+}
+.informe td img{
+    width: 30px;
+}
+table{
+    width: 100%;
+}
+table tr{
+    border-bottom: 1px solid #AAAAAA;
+}
+table td{
+    width: 140px;
+    text-align: center;
+}
+.comision__texto{
+    font-size: 11px;
+    color: #707070;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.comision__dias{
+    text-align: left;
+    font-size: 8px;
+    font-weight: bold;
+}
+.cobro__texto{
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cobro__dias{
+    width: 60px;
+    font-size: 8px;
+    color: #707070;
+    font-weight: bold;
+    margin-right: 10px;
+}
+.cobro__porcentaje{
+    text-align: center;
+    font-size: 11px;
+    color: #707070;
+}
+.tag, .tag__column{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+    margin: 5px 0;
+}
+.tag__item{
+    flex: 0 35%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+.tag__column .tag__item{
+    flex: 1 0 auto;  
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+}
+.tag__item p{
+    background-color: #9a9a9a;
+    color: #ffffff;
+    border-radius: 12px;
+    margin: 3px 0;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 15px;
+    float: left;
+    height: 18px;
+    font-size: 9px;
+}
+.informe table { 
+    border-collapse: collapse; 
+}
+table tbody tr th{
+    text-align: left;
+    font-size: 14px;
+    font-weight: 500;
+    color: #707070;
+    width: 185px;
+} 
+.informe td {
+    border-bottom: #BABABA 1px solid;
+    border-collapse: collapse;
+    height: 40px;
+    position: relative;
+  }
+.tag__column .tag__item p{
+    padding: 5px 15px;
+}
+.tipo-cuentas__item{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    width: 50%;
+    margin: auto;
+}
+.porcentaje__condiciones{
+    margin: 0 4px;
+}
+.condiciones{
+    font-size: 8px;
+    margin: 3px 0 15px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    color: #707070;
+}
+.registro td{
+    padding: 20px 0 40px;
+}
+.pagos td, .suscripcion td{
+    padding: 25px 0px 20px;
+}
+.tipo-cuentas td p{
+    text-align: left;
+    margin:0px;
+}
+.footer__container{
+    padding: 25px 35px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #393939;
+    border-radius: 10px;
+    color: #ffff;
+    min-height: 163px;
+    align-items: center;
+}
+.fz__10{
+    font-size: 10px;
+}
+.fz__11{
+    font-size: 11px;
+}
+.fz__13{
+    font-size: 13px;
+}
+.fz__14{
+    font-size: 14px;
+}
+.fz__26{
+    font-size: 26px;
+}
+.color__gray{
+    color: #707070;
+}
+footer{
+    margin-bottom: 34px;
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
+.footer__marca div:first-child, .footer__envio-correo div:first-child{
+    margin-bottom: 15px;
+}
+.footer__envio-correo div:first-child{
+    font-weight: bold;
+}
