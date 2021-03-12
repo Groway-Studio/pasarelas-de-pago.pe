@@ -1,0 +1,24 @@
+{
+  "payment_gateways": [
+    {
+      "name": "MercadoPago",
+      "logo": ""
+    },
+    {
+      "name": "niubiz",
+      "logo": ""
+    },
+    {
+      "name": "Culqi",
+      "logo": ""
+    },
+    {
+      "name": "Paypal",
+      "logo": ""
+    },
+    {
+      "name": "PayU",
+      "logo": ""
+    }
+  ]
+}
