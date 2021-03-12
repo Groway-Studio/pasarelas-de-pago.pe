@@ -3,27 +3,27 @@
     {
       "name": "MercadoPago",
       "logo": "images/mercadopago.png",
-      "installments_supported": 1
+      "installments_supported": true
     },
     {
       "name": "Culqi",
       "logo": "images/culqi.png",
-      "installments_supported": 1
+      "installments_supported": true
     },
     {
       "name": "niubiz",
       "logo": "images/niubiz.png",
-      "installments_supported": 1,
+      "installments_supported": true
     },
     {
       "name": "Paypal",
       "logo": "images/paypal.png",
-      "installments_supported": 0
+      "installments_supported": false
     },
     {
       "name": "PayU",
       "logo": "images/payu.png",
-      "installments_supported": 0
+      "installments_supported": false
     }
   ]
 }
