@@ -2,23 +2,28 @@
   "payment_gateways": [
     {
       "name": "MercadoPago",
-      "logo": "images/mercadopago.png"
+      "logo": "images/mercadopago.png",
+      "installments_supported": 1
     },
     {
       "name": "Culqi",
-      "logo": "images/culqi.png"
+      "logo": "images/culqi.png",
+      "installments_supported": 1
     },
     {
       "name": "niubiz",
-      "logo": "images/niubiz.png"
+      "logo": "images/niubiz.png",
+      "installments_supported": 1,
     },
     {
       "name": "Paypal",
-      "logo": "images/paypal.png"
+      "logo": "images/paypal.png",
+      "installments_supported": 0
     },
     {
       "name": "PayU",
-      "logo": "images/payu.png"
+      "logo": "images/payu.png",
+      "installments_supported": 0
     }
   ]
 }
