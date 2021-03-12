@@ -3,26 +3,31 @@
     {
       "name": "MercadoPago",
       "logo": "images/mercadopago.png",
+      "payment_methods": ["credito", "debito", "efectivo"],
       "installments_supported": true
     },
     {
       "name": "Culqi",
       "logo": "images/culqi.png",
+      "payment_methods": ["credito", "debito", "efectivo"],
       "installments_supported": true
     },
     {
       "name": "niubiz",
       "logo": "images/niubiz.png",
+      "payment_methods": ["credito", "debito", "efectivo"],
       "installments_supported": true
     },
     {
       "name": "Paypal",
       "logo": "images/paypal.png",
+      "payment_methods": ["credito", "debito"],
       "installments_supported": false
     },
     {
       "name": "PayU",
       "logo": "images/payu.png",
+      "payment_methods": ["credito", "debito"],
       "installments_supported": false
     }
   ]
