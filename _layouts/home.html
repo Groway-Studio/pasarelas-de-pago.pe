@@ -153,15 +153,11 @@ layout: default
                         <th>Medios de Pago Soportados</th>
                         <td>
                             <div class="tag">
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
+                                {% for pm in pg.payment_methods %}
+                                    <div class="tag__item">
+                                        <p>{{ pm }}</p>
+                                    </div>
+                                {% endfor %}
                             </div>
                         </td>
                         <td></td>
