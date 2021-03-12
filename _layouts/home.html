@@ -436,7 +436,9 @@ layout: default
                     </tr>
                     <tr>
                         <th>Pagos en cuotas</th>
-                        <td class="w-40"><img src="images/check-verde.png" alt=""></td>
+                        {% if pg.installments_supported %}
+                            <td class="w-40"><img src="images/check-verde.png" alt=""></td>
+                        {% endif %}
                     </tr>
                     <tr>
                         <th>Medios de pago offline</th>
