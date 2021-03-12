@@ -325,18 +325,14 @@ layout: default
 </section>
 
 <section class="d-none-mbl">
+    {% for pg in site.data.pasarelas.payment_gateways %}
     <div class="container">
         <div class="marcas">
             <table>
 
                 <body>
-                    <tr>
-                        <!-- <th></th> -->
-                        <td><img src="images/mercado-pago-logo-CC340D0497-seeklogo.com.png" alt=""></td>
-                        <!--  <td><img src="images/logo-niubiz.png" alt=""></td>
-                        <td><img src="images/culqi-logo.png" alt=""></td>
-                        <td><img src="images/paypal-logo.png" alt=""></td>
-                        <td><img src="images/PAYU_LOGO.png" alt=""></td> -->
+                    <tr> 
+                        <td><img src="{pg.logo}" alt="{pg.name}"></td> 
                     </tr>
                 </body>
             </table>
@@ -366,53 +362,15 @@ layout: default
                                 </div>
                             </div>
                         </td>
-                        <!--  <td>
-                            <div class="cobro__texto">
-                                <div class="cobro__dias">
-                                    <p>
-                                        COBRO CON LINK
-                                    </p>
-                                </div>
-                                <div class="cobro__porcentaje">
-                                    <p>
-                                        3,30% + IGV
-                                    </p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <p class="fz__11 color__gray">
-                                3,30% + S/. 1.00 + IGV
-                            </p>
-                        </td>
-                        <td>
-                            <p class="fz__11 color__gray">
-                                3,30% + S/. 1.00 + IGV
-                            </p>
-                        </td>
-                        <td></td> -->
+                        
                     </tr>
                     <tr class="d-flex-mbl">
                         <th>Monto mínimo</th>
                         <td></td>
-                        <!--  <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                     <tr class="registro d-flex-mbl">
                         <th>Modo de Registro</th>
                         <td class="fz__14 color__gray">100% Online</td>
-                        <!-- <td>
-                            <p class="porcentaje__condiciones fz__14 color__gray">100% Online</p>
-                            <div class="condiciones">
-                                *Recuerde envío de <br>
-                                descuento del negocio
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                     <tr class="tipo-cuentas fz__10 color__gray d-flex-mbl">
                         <th>Tipo de cuentas</th>
@@ -422,23 +380,10 @@ layout: default
                                 <p>Empresariales</p>
                             </div>
                         </td>
-                        <!-- <td>Empresariales</td>
-                        <td>Empresariales</td>
-                        <td>
-                            <div class="tipo-cuentas__item">
-                                <p>Personales</p>
-                                <p>Empresariales</p>
-                            </div>
-                        </td>
-                        <td>Empresariales</td> -->
                     </tr>
                     <tr class="d-flex-mbl">
                         <th>Tiempo de retiro</th>
                         <td></td>
-                        <!--  <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                     <tr class="d-flex-mbl">
                         <th>Medios de Pago Soportados</th>
@@ -455,43 +400,6 @@ layout: default
                                 </div>
                             </div>
                         </td>
-                        <!-- <td></td>
-                        <td>
-                            <div class="tag">
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="tag">
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td>
-                            <div class="tag">
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>Credito</p>
-                                </div>
-                            </div>
-                        </td> -->
                     </tr>
                     <tr class="d-flex-mbl">
                         <th>SDKs</th>
@@ -517,102 +425,44 @@ layout: default
                                 </div>
                             </div>
                         </td>
-                        <!--  <td></td>
-                        <td>
-                            <div class="tag">
-                                <div class="tag__item">
-                                    <p>PHP</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>JAVA</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>.NET</p>
-                                </div>
-                                <div class="tag__item">
-                                    <p>Python</p>
-                                </div>
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                     <tr class="d-flex-mbl">
                         <th>Plugins</th>
                         <td></td>
-                        <!--  <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                     <tr class="pagos">
                         <th>Pagos internacionales</th>
                         <td class="w-40"></td>
-                        <!--  <td></td>
-                        <td><img src="images/check-verde.png" alt="">
-                            <div class="condiciones">
-                                *Requiere actuaización del servicio
-                            </div>
-                        </td>
-                        <td><img src="images/check-verde.png" alt=""></td>
-                        <td><img src="images/check-verde.png" alt=""></td> -->
                     </tr>
                     <tr>
                         <th>Pagos en cuotas</th>
                         <td class="w-40"><img src="images/check-verde.png" alt=""></td>
-                        <!-- <td><img src="images/check-verde.png" alt=""></td>
-                        <td><img src="images/check-verde.png" alt=""></td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                     <tr>
                         <th>Medios de pago offline</th>
                         <td class="w-40"><img src="images/check-verde.png" alt=""></td>
-                        <!-- <td><img src="images/check-verde.png" alt=""></td>
-                        <td><img src="images/check-verde.png" alt=""></td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                     <tr class="suscripcion">
                         <th>Suscripciones</th>
                         <td class="w-40"></td>
-                        <!-- <td><img src="images/check-verde.png" alt=""></td>
-                        <td><img src="images/check-verde.png" alt="">
-                            <div class="condiciones">
-                                *Requiere actuaización del servicio
-                            </div>
-                        </td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                     <tr>
                         <th>E-Wallet</th>
                         <td class="w-40"><img src="images/check-verde.png" alt=""></td>
-                        <!--  <td></td>
-                        <td></td>
-                        <td><img src="images/check-verde.png" alt=""></td>
-                        <td></td> -->
                     </tr>
                     <tr>
                         <th>Cuentas multimoneda</th>
                         <td class="w-40"></td>
-                        <!--   <td><img src="images/check-verde.png" alt=""></td>
-                        <td><img src="images/check-verde.png" alt=""></td>
-                        <td></td>
-                        <td></td> -->
                     </tr>
                     <tr>
                         <th>Dinero en cuenta</th>
                         <td class="w-40"><img src="images/check-verde.png" alt=""></td>
-                        <!--  <td></td>
-                        <td></td>
-                        <td><img src="images/check-verde.png" alt=""></td>
-                        <td></td> -->
                     </tr>
 </tbody>
             </table>
         </div>
     </div>
+    {% endfor %}
 </section>
 
 <div class="menu-mbl d-none-mbl">
