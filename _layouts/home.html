@@ -40,15 +40,12 @@ layout: default
     <div class="container">
         <div class="marcas">
             <table>
-
                 <body>
                     <tr>
                         <th></th>
-                        <td><img src="images/mercado-pago-logo-CC340D0497-seeklogo.com.png" alt=""></td>
-                        <td><img src="images/logo-niubiz.png" alt=""></td>
-                        <td><img src="images/culqi-logo.png" alt=""></td>
-                        <td><img src="images/paypal-logo.png" alt=""></td>
-                        <td><img src="images/PAYU_LOGO.png" alt=""></td>
+                        {% for pasarela in site.data.pasarelas.payment_gateways %}
+                            <td><img src="{{ pasarela.logo }}" alt="{{ pasarela.name }}"></td>
+                        {% endfor %}
                     </tr>
                 </body>
             </table>
