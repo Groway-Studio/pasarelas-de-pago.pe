@@ -4,31 +4,98 @@
       "name": "MercadoPago",
       "logo": "images/mercadopago.png",
       "payment_methods": ["credito", "debito", "efectivo"],
-      "installments_supported": true
+      "transactional_feed": [
+        {"inmediato": "3,30% + S/. 1.00 + IGV"},
+        {"14 días": "3,30% + S/. 1.00 + IGV"},
+      ],
+      "account_types_supported": ["Personales", "Empresariales"],
+      "installments_supported": true,
+      "SDKs": ["PHP", "JAVA", ".NET", "Ruby", "NodeJS", "Python"],
+      "plugins": ["Shopify", "Magento", "Prestashop"],
+      "international_cards": false,
+      "international_cards_manual": false,
+      "installments_supported": true,
+      "offline_payments_supported": true,
+      "subscriptions_supported": true,
+      "ewallet_supported": true,
+      "multi_currency_supported": true
     },
     {
       "name": "Culqi",
       "logo": "images/culqi.png",
       "payment_methods": ["credito", "debito", "efectivo"],
-      "installments_supported": true
+      "transactional_feed": [
+        {"cobro con link": "3,30% + IGV"}
+      ],
+      "account_types_supported": ["Empresariales"],
+      "installments_supported": true,
+      "SDKs": ["PHP", "JAVA", ".NET", "Ruby", "NodeJS", "Python"],
+      "plugins": ["Shopify", "Magento", "Prestashop"],
+      "international_cards": false,
+      "international_cards_manual": false,
+      "installments_supported": true,
+      "offline_payments_supported": true,
+      "subscriptions_supported": true,
+      "ewallet_supported": true,
+      "multi_currency_supported": true
     },
     {
       "name": "niubiz",
       "logo": "images/niubiz.png",
       "payment_methods": ["credito", "debito", "efectivo"],
-      "installments_supported": true
+      "transactional_feed": [
+        {"default": "3,30% + IGV"}
+      ],
+      "account_types_supported": ["Empresariales"],
+      "installments_supported": true,
+      "SDKs": ["PHP", "JAVA", ".NET", "Ruby", "NodeJS", "Python"],
+      "plugins": ["Shopify", "Magento", "Prestashop"],
+      "international_cards": true,
+      "international_cards_manual": true,
+      "international_cards_manual": true,
+      "installments_supported": true,
+      "offline_payments_supported": true,
+      "subscriptions_supported": true,
+      "ewallet_supported": true,
+      "multi_currency_supported": true
     },
     {
       "name": "Paypal",
       "logo": "images/paypal.png",
       "payment_methods": ["credito", "debito"],
-      "installments_supported": false
+      "transactional_feed": [
+        {"default": "3,30% + IGV"}
+      ],
+      "account_types_supported": ["Personales", "Empresariales"],
+      "installments_supported": false,
+      "SDKs": ["PHP", "JAVA", ".NET", "Ruby", "NodeJS", "Python"],
+      "plugins": ["Shopify", "Magento", "Prestashop"],
+      "international_cards": true,
+      "international_cards_manual": false,
+      "installments_supported": false,
+      "offline_payments_supported": true,
+      "subscriptions_supported": true,
+      "ewallet_supported": true,
+      "multi_currency_supported": true
     },
     {
       "name": "PayU",
       "logo": "images/payu.png",
       "payment_methods": ["credito", "debito"],
-      "installments_supported": false
+      "transactional_feed": [
+        {"default": "3,30% + IGV"}
+      ],
+      "account_types_supported": ["Empresariales"],
+      "installments_supported": false,
+      "SDKs": ["PHP", "JAVA", ".NET", "Ruby", "NodeJS", "Python"],
+      "plugins": ["Shopify", "Magento", "Prestashop", "WooComerce"],
+      "international_cards": true,
+      "international_cards_manual": false,
+      "installments_supported": false,
+      "offline_payments_supported": true,
+      "subscriptions_supported": true,
+      "ewallet_supported": true,
+      "multi_currency_supported": true
     }
   ]
 }
