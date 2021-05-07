@@ -1,3 +1,7 @@
 theme: jekyll-theme-minimal
 sass:
   style: compressed
+plugins:
+  - jekyll-seo-tag
+author:
+  name: Groway Studio
