@@ -256,16 +256,23 @@ body{
      .fz__11 {
          font-size: 9px;
      }
+     .tag__column .tag__item p {
+        padding: 5px 5px;
+        font-size: 8px;
+    }
  }
  @media screen and (max-width: 1080px){
      .tag__column .tag__item p {
-         padding: 5px 5px;
+         padding: 5px 12px; 
      }
-     .tag__column .tag__item p {
-         padding: 5px 5px;
-     }
+     .plugin .tag__column .tag__item p {
+        padding: 5px 5px; 
+    }
      .pagos td, .suscripcion td{
          padding: 25px 0px 30px;
+     }
+     .comision__porcentaje{
+        font-size: 8px;
      }
  }
  @media screen and (max-width: 1008px){
