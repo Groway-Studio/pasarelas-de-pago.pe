@@ -1,4 +1,7 @@
-
+html{
+    height: auto;
+    width: 100%;
+}
 body{
     height: 100%;
      width: 100%; 
@@ -78,7 +81,7 @@ body{
      font-size: 11px;
      color: #707070;
      display: flex;
-     justify-content: space-between;
+     justify-content: space-around;
      align-items: center;
  }
  .comision__dias{
@@ -120,7 +123,6 @@ body{
  }
  .tag__column .tag__item{
      flex: 1 0 auto;  
-     width: 33.3%;
      display: flex;
      justify-content: center;
  }
@@ -155,7 +157,7 @@ body{
      position: relative;
    }
  .tag__column .tag__item p{
-     padding: 5px 15px;
+     padding: 5px 10px;
  }
  .tipo-cuentas__item{
      display: flex;
