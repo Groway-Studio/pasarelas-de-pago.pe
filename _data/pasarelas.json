@@ -101,7 +101,7 @@
       "account_types_supported": ["Personales", "Empresariales"],
       "installments_supported": false,
       "SDKs": ["PHP", "Java"],
-      "plugins": ["Shopify", "Magento", "Prestashop", "VTex", "WooCommerce", "VTEX"],
+      "plugins": ["Shopify", "Magento", "Prestashop", "VTex", "WooCommerce"],
       "international_cards": true,
       "international_cards_manual": false,
       "installments_supported": true,
