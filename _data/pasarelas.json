@@ -19,7 +19,9 @@
       "offline_payments_supported": true,
       "subscriptions_supported": true,
       "ewallet_supported": true,
-      "multi_currency_supported": false
+      "multi_currency_supported": false,
+      "record_mode": "100% Online",
+      "record_mode_tip": "",
     },
     {
       "name": "Culqi",
@@ -39,7 +41,9 @@
       "offline_payments_supported": true,
       "subscriptions_supported": true,
       "ewallet_supported": false,
-      "multi_currency_supported": true
+      "multi_currency_supported": true,
+      "record_mode": "100% Online",
+      "record_mode_tip": "*Recuerde envío de descuento del negocio",
     },
     {
       "name": "niubiz",
@@ -60,7 +64,9 @@
       "offline_payments_supported": true,
       "subscriptions_supported": true,
       "ewallet_supported": true,
-      "multi_currency_supported": true
+      "multi_currency_supported": true,
+      "record_mode": "",
+      "record_mode_tip": "",
     },
     {
       "name": "Paypal",
@@ -80,7 +86,9 @@
       "offline_payments_supported": true,
       "subscriptions_supported": true,
       "ewallet_supported": true,
-      "multi_currency_supported": true
+      "multi_currency_supported": true,
+      "record_mode": "",
+      "record_mode_tip": "",
     },
     {
       "name": "PayU",
@@ -100,7 +108,9 @@
       "offline_payments_supported": true,
       "subscriptions_supported": true,
       "ewallet_supported": false,
-      "multi_currency_supported": true
+      "multi_currency_supported": true,
+      "record_mode": "",
+      "record_mode_tip": "",
     }
   ]
 }
