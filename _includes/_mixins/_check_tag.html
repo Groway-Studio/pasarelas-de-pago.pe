@@ -1,0 +1,12 @@
+<td>
+  {% if pasarela["installments_supported"] == true %}
+      <img src="images/Check.png" alt="">
+  {% else %}
+      <img src="images/Cross.png" alt="">
+  {% endif %}
+  {% if manual == true %}
+    <div class="condiciones">
+      *Requiere activacion manual del servicio
+    </div>
+  {% endif %}
+</td>

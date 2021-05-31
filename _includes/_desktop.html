@@ -121,98 +121,48 @@
                       {% endfor %}
                   </tr>
                   <tr class="pagos">
-                      <th>Pagos internacionales</th>
-                      {% for pasarela in site.data.pasarelas.payment_gateways %}
-                          <td>
-                              {% if pasarela["international_cards"] == true %}
-                                  <img src="images/Check.png" alt="">
-                              {% else %}
-                                  <img src="images/Cross.png" alt="">
-                              {% endif %}
-                              {% if pasarela["international_cards_manual"] == true %}
-                                  <div class="condiciones">
-                                      *Requiere activacion manual del servicio
-                                  </div>
-                              {% endif %}
-                          </td>
-                      {% endfor %}
+                    <th>Pagos internacionales</th>
+                    {% for pasarela in site.data.pasarelas.payment_gateways %}
+                        {% manual_flag = pasarela["international_cards_manual"] %}
+                        {% include _mixins/_check_tag.html pasarela = pasarela manual = manual_flag %}
+                    {% endfor %}
                   </tr>
                   <tr>
-                      <th>Pagos en cuotas</th>
-                      {% for pasarela in site.data.pasarelas.payment_gateways %}
-                          <td>
-                              {% if pasarela["installments_supported"] == true %}
-                                  <img src="images/Check.png" alt="">
-                              {% else %}
-                                  <img src="images/Cross.png" alt="">
-                              {% endif %}
-                          </td>
-                      {% endfor %}
+                    <th>Pagos en cuotas</th>
+                    {% for pasarela in site.data.pasarelas.payment_gateways %}
+                        {% include _mixins/_check_tag.html pasarela=pasarela %}
+                    {% endfor %}
                   </tr>
                   <tr>
-                      <th>Medios de pago offline</th>
-                      {% for pasarela in site.data.pasarelas.payment_gateways %}
-                          <td>
-                              {% if pasarela["offline_payments_supported"] == true %}
-                                  <img src="images/Check.png" alt="">
-                              {% else %}
-                                  <img src="images/Cross.png" alt="">
-                              {% endif %}
-                          </td>
-                      {% endfor %}
+                    <th>Medios de pago offline</th>
+                    {% for pasarela in site.data.pasarelas.payment_gateways %}
+                        {% include _mixins/_check_tag.html pasarela=pasarela %}
+                    {% endfor %}
                   </tr>
                   <tr class="suscripcion">
-                      <th>Suscripciones</th>
-                      {% for pasarela in site.data.pasarelas.payment_gateways %}
-                          <td>
-                              {% if pasarela["subscriptions_supported"] == true %}
-                                  <img src="images/Check.png" alt="">
-                              {% else %}
-                                  <img src="images/Cross.png" alt="">
-                              {% endif %}
-                              {% if pasarela["subscriptions_supported_manual"] == true %}
-                                  <div class="condiciones">
-                                      *Requiere activacion manual del servicio
-                                  </div>
-                              {% endif %}
-                          </td>
-                      {% endfor %}
+                    <th>Suscripciones</th>
+                    {% for pasarela in site.data.pasarelas.payment_gateways %}
+                        {% manual_flag = pasarela["subscriptions_supported_manual"] %}
+                        {% include _mixins/_check_tag.html pasarela = pasarela manual = manual_flag %}
+                    {% endfor %}
                   </tr>
                   <tr>
-                      <th>E-Wallet</th>
-                      {% for pasarela in site.data.pasarelas.payment_gateways %}
-                          <td>
-                              {% if pasarela["ewallet_supported"] == true %}
-                                  <img src="images/Check.png" alt="">
-                              {% else %}
-                                  <img src="images/Cross.png" alt="">
-                              {% endif %}
-                          </td>
-                      {% endfor %}
+                    <th>E-Wallet</th>
+                    {% for pasarela in site.data.pasarelas.payment_gateways %}
+                        {% include _mixins/_check_tag.html pasarela=pasarela %}
+                    {% endfor %}
                   </tr>
                   <tr>
-                      <th>Cuentas multimoneda</th>
-                      {% for pasarela in site.data.pasarelas.payment_gateways %}
-                          <td>
-                              {% if pasarela["multi_currency_supported"] == true %}
-                                  <img src="images/Check.png" alt="">
-                              {% else %}
-                                  <img src="images/Cross.png" alt="">
-                              {% endif %}
-                          </td>
-                      {% endfor %}
+                    <th>Cuentas multimoneda</th>
+                    {% for pasarela in site.data.pasarelas.payment_gateways %}
+                        {% include _mixins/_check_tag.html pasarela=pasarela %}
+                    {% endfor %}
                   </tr>
                   <tr>
-                      <th>Dinero en cuenta</th>
-                      {% for pasarela in site.data.pasarelas.payment_gateways %}
-                          <td class="w-40">
-                              {% if pasarela["money_account"] == true %}
-                                  <img src="images/Check.png" alt="">
-                              {% else %}
-                                  <img src="images/Cross.png" alt="">
-                              {% endif %}
-                          </td>
-                      {% endfor %}
+                    <th>Dinero en cuenta</th>
+                    {% for pasarela in site.data.pasarelas.payment_gateways %}
+                        {% include _mixins/_check_tag.html pasarela=pasarela %}
+                    {% endfor %}
                   </tr>
               </tbody>
           </table>
