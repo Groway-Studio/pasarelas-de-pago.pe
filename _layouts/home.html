@@ -173,10 +173,10 @@ layout: default
                         {% for pasarela in site.data.pasarelas.payment_gateways %}
                             <td>
                                 {% if pasarela["international_cards"] == true %}
-                                    <img src="images/check-verde.png" alt="">
+                                    <img src="images/Check.png" alt="">
                                 {% endif %}
                                 {% if pasarela["international_cards"] == false %}
-                                    <img src="images/check-rojo.png" alt="">
+                                    <img src="images/Cross.png" alt="">
                                 {% endif %}
                                 {% if pasarela["international_cards_manual"] == true %}
                                     <div class="condiciones">
@@ -191,10 +191,10 @@ layout: default
                         {% for pasarela in site.data.pasarelas.payment_gateways %}
                             <td>
                                 {% if pasarela["installments_supported"] == true %}
-                                    <img src="images/check-verde.png" alt="">
+                                    <img src="images/Check.png" alt="">
                                 {% endif %}
                                 {% if pasarela["installments_supported"] == false %}
-                                    <img src="images/check-rojo.png" alt="">
+                                    <img src="images/Cross.png" alt="">
                                 {% endif %}
                             </td>
                         {% endfor %}
@@ -204,10 +204,10 @@ layout: default
                         {% for pasarela in site.data.pasarelas.payment_gateways %}
                             <td>
                                 {% if pasarela["offline_payments_supported"] == true %}
-                                    <img src="images/check-verde.png" alt="">
+                                    <img src="images/Check.png" alt="">
                                 {% endif %}
                                 {% if pasarela["offline_payments_supported"] == false %}
-                                    <img src="images/check-rojo.png" alt="">
+                                    <img src="images/Cross.png" alt="">
                                 {% endif %}
                             </td>
                         {% endfor %}
@@ -217,10 +217,10 @@ layout: default
                         {% for pasarela in site.data.pasarelas.payment_gateways %}
                             <td>
                                 {% if pasarela["subscriptions_supported"] == true %}
-                                    <img src="images/check-verde.png" alt="">
+                                    <img src="images/Check.png" alt="">
                                 {% endif %}
                                 {% if pasarela["subscriptions_supported"] == false %}
-                                    <img src="images/check-rojo.png" alt="">
+                                    <img src="images/Cross.png" alt="">
                                 {% endif %}
                             </td>
                         {% endfor %}
@@ -230,10 +230,10 @@ layout: default
                         {% for pasarela in site.data.pasarelas.payment_gateways %}
                             <td>
                                 {% if pasarela["ewallet_supported"] == true %}
-                                    <img src="images/check-verde.png" alt="">
+                                    <img src="images/Check.png" alt="">
                                 {% endif %}
                                 {% if pasarela["ewallet_supported"] == false %}
-                                    <img src="images/check-rojo.png" alt="">
+                                    <img src="images/Cross.png" alt="">
                                 {% endif %}
                             </td>
                         {% endfor %}
@@ -243,10 +243,10 @@ layout: default
                         {% for pasarela in site.data.pasarelas.payment_gateways %}
                             <td>
                                 {% if pasarela["multi_currency_supported"] == true %}
-                                    <img src="images/check-verde.png" alt="">
+                                    <img src="images/Check.png" alt="">
                                 {% endif %}
                                 {% if pasarela["multi_currency_supported"] == false %}
-                                    <img src="images/check-rojo.png" alt="">
+                                    <img src="images/Cross.png" alt="">
                                 {% endif %}
                             </td>
                         {% endfor %}
@@ -256,10 +256,10 @@ layout: default
                         {% for pasarela in site.data.pasarelas.payment_gateways %}
                             <td class="w-40">
                                 {% if pasarela["money_account"] == true %}
-                                    <img src="images/check-verde.png" alt="">
+                                    <img src="images/Check.png" alt="">
                                 {% endif %}
                                 {% if pasarela["money_account"] == false %}
-                                    <img src="images/check-rojo.png" alt="">
+                                    <img src="images/Cross.png" alt="">
                                 {% endif %}
                             </td>
                         {% endfor %}
@@ -404,10 +404,10 @@ layout: default
                         <th>Pagos internacionales</th>
                         <td class="w-40"> 
                         {% if pasarela["international_cards"] == true %}
-                            <img src="images/check-verde.png" alt="">
+                            <img src="images/Check.png" alt="">
                         {% endif %}
                         {% if pasarela["international_cards"] == false %}
-                            <img src="images/check-rojo.png" alt="">
+                            <img src="images/Cross.png" alt="">
                         {% endif %}
                         {% if pasarela["international_cards_manual"] == true %}
                             <div class="condiciones">
@@ -420,10 +420,10 @@ layout: default
                         <th>Pagos en cuotas</th>
                         <td class="w-40">
                             {% if pasarela["installments_supported"] == true %}
-                            <img src="images/check-verde.png" alt="">
+                            <img src="images/Check.png" alt="">
                             {% endif %}
                             {% if pasarela["installments_supported"] == false %}
-                                <img src="images/check-rojo.png" alt="">
+                                <img src="images/Cross.png" alt="">
                             {% endif %}
                         </td>
                     </tr>
@@ -431,10 +431,10 @@ layout: default
                         <th>Medios de pago offline</th>
                         <td class="w-40">
                             {% if pasarela["offline_payments_supported"] == true %}
-                                <img src="images/check-verde.png" alt="">
+                                <img src="images/Check.png" alt="">
                             {% endif %}
                             {% if pasarela["offline_payments_supported"] == false %}
-                                <img src="images/check-rojo.png" alt="">
+                                <img src="images/Cross.png" alt="">
                             {% endif %}
                         </td>
                     </tr>
@@ -442,10 +442,10 @@ layout: default
                         <th>Suscripciones</th>
                         <td class="w-40">
                             {% if pasarela["subscriptions_supported"] == true %}
-                                <img src="images/check-verde.png" alt="">
+                                <img src="images/Check.png" alt="">
                             {% endif %}
                             {% if pasarela["subscriptions_supported"] == false %}
-                                <img src="images/check-rojo.png" alt="">
+                                <img src="images/Cross.png" alt="">
                             {% endif %}
                         </td>
                     </tr>
@@ -453,10 +453,10 @@ layout: default
                         <th>E-Wallet</th>
                         <td class="w-40">
                             {% if pasarela["ewallet_supported"] == true %}
-                                <img src="images/check-verde.png" alt="">
+                                <img src="images/Check.png" alt="">
                             {% endif %}
                             {% if pasarela["ewallet_supported"] == false %}
-                                <img src="images/check-rojo.png" alt="">
+                                <img src="images/Cross.png" alt="">
                             {% endif %}
                         </td>
                     </tr>
@@ -464,10 +464,10 @@ layout: default
                         <th>Cuentas multimoneda</th>
                         <td class="w-40">
                             {% if pasarela["multi_currency_supported"] == true %}
-                                <img src="images/check-verde.png" alt="">
+                                <img src="images/Check.png" alt="">
                             {% endif %}
                             {% if pasarela["multi_currency_supported"] == false %}
-                                <img src="images/check-rojo.png" alt="">
+                                <img src="images/Cross.png" alt="">
                             {% endif %}
                         </td>
                     </tr>
@@ -475,10 +475,10 @@ layout: default
                         <th>Dinero en cuenta</th>
                         <td class="w-40">
                             {% if pasarela["money_account"] == true %}
-                                <img src="images/check-verde.png" alt="">
+                                <img src="images/Check.png" alt="">
                             {% endif %}
                             {% if pasarela["money_account"] == false %}
-                                <img src="images/check-rojo.png" alt="">
+                                <img src="images/Cross.png" alt="">
                             {% endif %}
                         </td>
                     </tr>
