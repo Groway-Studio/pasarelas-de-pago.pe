@@ -117,7 +117,7 @@
       "subscriptions_supported": true,
       "subscriptions_supported_manual": false,
       "ewallet_supported": false,
-      "multi_currency_supported": true,
+      "multi_currency_supported": false,
       "money_account": false,
       "record_mode": "",
       "record_mode_tip": "",
