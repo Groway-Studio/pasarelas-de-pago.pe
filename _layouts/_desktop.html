@@ -1,0 +1,221 @@
+<section class="d-none-desk">
+  <div class="container">
+      <div class="marcas">
+          <table>
+              <body>
+                  <tr>
+                      <th></th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td><img src="{{ pasarela.logo }}" alt="{{ pasarela.name }}"></td>
+                      {% endfor %}
+                  </tr>
+              </body>
+          </table>
+      </div>
+      <div class="informe">
+          <table>
+              <tbody>
+                  <tr>
+                      <th>Comisión transaccional</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              <div class="comision__texto">
+                                  <div class="comision__dias">
+                                      {% for fees in pasarela["transactional_feed"] %}
+                                          {% for fee in fees %}
+                                              <p> {{ fee[0] | capitalize }} </p>
+                                          {% endfor %}
+                                      {% endfor %}
+                                  </div>
+                                  <div class="comision__porcentaje">
+                                      {% for fees in pasarela["transactional_feed"] %}
+                                          {% for fee in fees %}
+                                              <p> {{fee[1] | capitalize }} </p>
+                                          {% endfor %}
+                                      {% endfor %}
+                                  </div>
+                              </div>
+                          </td>
+                      {% endfor %}
+                  </tr>
+
+                  <tr>
+                      <th>Monto mínimo</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                      <td class="fz__14 color__gray">
+                          {% for amount in pasarela["min_amount"] %}
+                            {{amount}}
+                          {% endfor %}
+                      </td>
+                      {% endfor %}
+                  </tr>
+                  <tr class="registro">
+                      <th>Modo de Registro</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                      <td class="fz__14 color__gray">
+                          {% for rm in pasarela["record_mode"] %}
+                            {{rm}} 
+                          {% endfor %}
+                          <div class="condiciones">
+                            {% for rmt in pasarela["record_mode_tip"] %}
+                              {{rmt}} 
+                            {% endfor %}
+                            {{mr.tip}} <br>
+                          </div>   
+                      </td>
+                      {% endfor %}
+                  </tr>
+
+                  <tr class="tipo-cuentas fz__10 color__gray">
+                      <th>Tipo de cuentas</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              <div class="tipo-cuentas__item">
+                                  {% for account_type in pasarela["account_types_supported"] %}
+                                      <p> {{ account_type }} </p>
+                                  {% endfor %}
+                              </div>
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr>
+                      <th>Medios de Pago Soportados</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              <div class="tag">
+                                  {% for payment_method in pasarela["payment_methods"] %}
+                                      <div class="tag__item">
+                                          <p> {{ payment_method }} </p>
+                                      </div> 
+                                  {% endfor %}
+                              </div>
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr>
+                      <th>SDKs</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              <div class="tag__column">
+                                  {% for sdk in pasarela["SDKs"] %}
+                                      <div class="tag__item">
+                                          <p> {{ sdk }} </p>
+                                      </div>
+                                  {% endfor %}
+                              </div>
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr class="plugin">
+                      <th>Plugins</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              <div class="tag__column">
+                                  {% for plugin in pasarela["plugins"] %}
+                                      <div class="tag__item">
+                                          <p> {{ plugin }} </p>
+                                      </div>
+                                  {% endfor %}
+                              </div>
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr class="pagos">
+                      <th>Pagos internacionales</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              {% if pasarela["international_cards"] == true %}
+                                  <img src="images/Check.png" alt="">
+                              {% else %}
+                                  <img src="images/Cross.png" alt="">
+                              {% endif %}
+                              {% if pasarela["international_cards_manual"] == true %}
+                                  <div class="condiciones">
+                                      *Requiere activacion manual del servicio
+                                  </div>
+                              {% endif %}
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr>
+                      <th>Pagos en cuotas</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              {% if pasarela["installments_supported"] == true %}
+                                  <img src="images/Check.png" alt="">
+                              {% else %}
+                                  <img src="images/Cross.png" alt="">
+                              {% endif %}
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr>
+                      <th>Medios de pago offline</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              {% if pasarela["offline_payments_supported"] == true %}
+                                  <img src="images/Check.png" alt="">
+                              {% else %}
+                                  <img src="images/Cross.png" alt="">
+                              {% endif %}
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr class="suscripcion">
+                      <th>Suscripciones</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              {% if pasarela["subscriptions_supported"] == true %}
+                                  <img src="images/Check.png" alt="">
+                              {% else %}
+                                  <img src="images/Cross.png" alt="">
+                              {% endif %}
+                              {% if pasarela["subscriptions_supported_manual"] == true %}
+                                  <div class="condiciones">
+                                      *Requiere activacion manual del servicio
+                                  </div>
+                              {% endif %}
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr>
+                      <th>E-Wallet</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              {% if pasarela["ewallet_supported"] == true %}
+                                  <img src="images/Check.png" alt="">
+                              {% else %}
+                                  <img src="images/Cross.png" alt="">
+                              {% endif %}
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr>
+                      <th>Cuentas multimoneda</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td>
+                              {% if pasarela["multi_currency_supported"] == true %}
+                                  <img src="images/Check.png" alt="">
+                              {% else %}
+                                  <img src="images/Cross.png" alt="">
+                              {% endif %}
+                          </td>
+                      {% endfor %}
+                  </tr>
+                  <tr>
+                      <th>Dinero en cuenta</th>
+                      {% for pasarela in site.data.pasarelas.payment_gateways %}
+                          <td class="w-40">
+                              {% if pasarela["money_account"] == true %}
+                                  <img src="images/Check.png" alt="">
+                              {% else %}
+                                  <img src="images/Cross.png" alt="">
+                              {% endif %}
+                          </td>
+                      {% endfor %}
+                  </tr>
+              </tbody>
+          </table>
+      </div>
+  </div>
+</section>
