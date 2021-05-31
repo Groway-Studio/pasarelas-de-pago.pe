@@ -222,6 +222,11 @@ layout: default
                                 {% if pasarela["subscriptions_supported"] == false %}
                                     <img src="images/Cross.png" alt="">
                                 {% endif %}
+                                {% if pasarela["subscriptions_supported_manual"] == true %}
+                                    <div class="condiciones">
+                                        *Requiere actuaización del servicio
+                                    </div>
+                                {% endif %}
                             </td>
                         {% endfor %}
                     </tr>
@@ -446,6 +451,11 @@ layout: default
                             {% endif %}
                             {% if pasarela["subscriptions_supported"] == false %}
                                 <img src="images/Cross.png" alt="">
+                            {% endif %}
+                            {% if pasarela["subscriptions_supported_manual"] == true %}
+                                <div class="condiciones">
+                                    *Requiere actuaización del servicio
+                                </div>
                             {% endif %}
                         </td>
                     </tr>
