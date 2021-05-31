@@ -65,7 +65,7 @@
       "international_cards_manual": true,
       "international_cards_manual": true,
       "installments_supported": true,
-      "offline_payments_supported": true,
+      "offline_payments_supported": false,
       "subscriptions_supported": true,
       "subscriptions_supported_manual": false,
       "ewallet_supported": true,
