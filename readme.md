@@ -6,7 +6,7 @@ Hola Comunidad esta es una iniciativa que tiene como objetivo bridarles una herr
 
 ### Como funciona?
 
-La informacion sobre las pasarelas de pago es almacenada en un archivo llamado [pasarelas.json](https://github.com/Groway-Studio/pasarelas-de-pago.pe/blob/master/_data/pasarelas.json) el cual es procesado mediante el generador de sitios estaticos Jekyll esta informacion es usada para poblar el template principal, este proceso da como resultado un archivo final **.html** que corresponde al sitio web publico.
+La informacion sobre las pasarelas de pago es almacenada en un archivo llamado [pasarelas.json](https://github.com/Groway-Studio/pasarelas-de-pago.pe/blob/master/_data/pasarelas.json) el cual es procesado mediante el generador de sitios estaticos [Jekyll](https://jekyllrb.com) esta informacion es usada para poblar el template principal, este proceso da como resultado un archivo final **.html** que corresponde al sitio web publico.
 
 <br/>
 
